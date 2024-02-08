@@ -62,7 +62,7 @@ POSTCONDITIONS:
 
 ```
 IDENTIFIER: TEST-6-SEARCH-CSC
-TEST CASE: Check that the second item when searching "csc" iis the CSC Officers page.
+TEST CASE: Check that the third item when searching "csc" is the CSC Officers page.
 PRECONDITIONS: None.
 EXECUTION STEPS:
 1. Open the URL https://www.pitt.edu/ on the web browser.
@@ -70,7 +70,7 @@ EXECUTION STEPS:
 3. Type "csc" in the search box that pops up.
 4. Type [Enter] in the search box.
 POSTCONDITIONS: 
-* The 4th div element in the search results has the title:
+* The 3rd div element in the search results has the title:
   "Computer Science Club (CSC) | Department of Computer Science ...". 
   (Use "assert text" for xpath containing div[4].) 
 ```
