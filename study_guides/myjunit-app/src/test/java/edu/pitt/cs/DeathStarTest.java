@@ -63,9 +63,8 @@ public class DeathStarTest {
 
 		String result = deathStar.shoot(mockPlanet);
 		String expected = "Wimpy planet was hit by the superlaser!";
-		assertEquals("Wimpy planet was hit by the superlaser!", result);
+		assertEquals(expected, result);
 		Mockito.verify(mockPlanet).damage(100);
-
 
 	}
 }
