@@ -69,5 +69,5 @@ public class DeathStarTest {
 		Mockito.verify(mockPlanet, times(1)).damage(100);
 	}
 
-	
+
 }
