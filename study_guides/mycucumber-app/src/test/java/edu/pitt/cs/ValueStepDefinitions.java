@@ -8,11 +8,13 @@ import static org.junit.Assert.*;
 
 public class ValueStepDefinitions {
     Value value;
+
     @Given("a Value")
     public void a_value() {
         // Write code here that turns the phrase above into concrete actions
         this.value = new Value();
     }
+
     @When("I incVal")
     public void i_inc_val() {
         // Write code here that turns the phrase above into concrete actions
@@ -24,4 +26,11 @@ public class ValueStepDefinitions {
         // Write code here that turns the phrase above into concrete actions
         assertEquals((int) int1, this.value.getVal());
     }
+
+    @When("I incVal12313")
+    public void i_inc_val12313() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
 }
