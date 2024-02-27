@@ -1,6 +1,8 @@
 package edu.pitt.cs;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.times;
+
 import org.mockito.*;
 
 import io.cucumber.java.After;
@@ -63,8 +65,9 @@ public class DeathStarTest {
 
 		String result = deathStar.shoot(mockPlanet);
 		String expected = "Wimpy planet was hit by the superlaser!";
-		assertEquals(expected, result);
-		Mockito.verify(mockPlanet).damage(100);
-
+		assertEquals("Wimpy planet was hit by the superlaser!", result);
+		Mockito.verify(mockPlanet, times(1)).damage(100);
 	}
+
+
 }

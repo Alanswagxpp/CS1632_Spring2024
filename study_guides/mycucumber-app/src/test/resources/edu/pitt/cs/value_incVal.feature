@@ -14,6 +14,8 @@ Rule: getVal returns a number equal to the number of times incVal was called.
 
   Scenario: if I call incVal 1 time, then getVal returns 1
     # TODO: Fill in!
+    When I incVal12313
+    Then getVal returns 2
 
   Scenario: if I call incVal 2 times, then getVal returns 2
     # TODO: Fill in!
